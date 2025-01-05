@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="my.css" />
+    <title>To Do App 2.0</title>
+  </head>
+  <body class="bg-slate-900">
+    <h2 style="color: #c5e0dc; --a: 45deg; --t: 0.15em">
+      <span>Listify</span>
+    </h2>
+    <div class="form-div">
+      <div class="form__group field">
+        <input
+          type="input"
+          class="form__field"
+          placeholder="Name"
+          name="name"
+          id="name"
+          required
+          autocomplete="off"
+        />
+        <label for="name" class="form__label">Title</label>
+      </div>
+
+      <div class="adding-task">
+        <label for="price" class="block text-sm/6 font-medium text-gray-900"
+          >Price</label
+        >
+        <div class="mt-4">
+          <div
+            class="flex items-center bg-white pl-10 outline outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600"
+          >
+            <input  id="adding-task-2.0"
+              type="text"
+              name="price"
+              id="price"
+              class="block min-w-0 grow py-1.5 pl-1 pr-20 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+              placeholder="Enter the task"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <button class="button-34" onclick="addTask()" role="button">Add</button>
+        
+      </div>
+
+
+      
+      <ul id="list-container-2.0">
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
